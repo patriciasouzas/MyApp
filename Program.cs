@@ -2,13 +2,10 @@
 {
     static void Main(string[] args)
     {
-        var id = Guid.NewGuid();
-        id.ToString();
-
-        id = new Guid("7a6b45ba-06da-400b-85c7-ce38048fca2f");
-        Console.WriteLine(id.ToString().Substring(0, 8));
-
-        id = Guid.NewGuid();
-        Console.WriteLine(id.ToString().Substring(0, 8));
+        var price = 10.2;
+        // var texto = ("O preço do produto é " + price + " apenas na promoção");
+        // var texto = string.Format("O preço do produto é {0} apenas na promoção", price);
+        var texto = $"O preço do produto é {price} apenas na promoção";
+        Console.WriteLine(texto);
     }
 }
