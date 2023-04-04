@@ -3,6 +3,7 @@
     static void Main(string[] args)
     {
         Interpolacao();
+        ComparacaoDeString();
     }
 
     static void Interpolacao()
@@ -13,4 +14,16 @@
         var texto = $"O preço do produto é {price} apenas na promoção";
         Console.WriteLine(texto);
     }
+
+    static void ComparacaoDeString()
+    {
+        var texto = "Testando";
+
+        Console.WriteLine(texto.CompareTo("testando"));
+        Console.WriteLine(texto.CompareTo("Testando"));
+        Console.WriteLine(texto.Contains("Tes"));
+        Console.WriteLine(texto.Contains("testa", StringComparison.OrdinalIgnoreCase));
+    }
+
+
 }
