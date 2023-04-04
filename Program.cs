@@ -4,6 +4,7 @@
     {
         Interpolacao();
         ComparacaoDeString();
+        StartsWithEndsWith();
     }
 
     static void Interpolacao()
@@ -23,6 +24,17 @@
         Console.WriteLine(texto.CompareTo("Testando"));
         Console.WriteLine(texto.Contains("Tes"));
         Console.WriteLine(texto.Contains("testa", StringComparison.OrdinalIgnoreCase));
+    }
+
+    static void StartsWithEndsWith()
+    {
+        var texto = "Este texto é um teste.";
+        Console.WriteLine(texto.StartsWith("Este"));
+        Console.WriteLine(texto.StartsWith("este"));
+        Console.WriteLine(texto.StartsWith("este", StringComparison.OrdinalIgnoreCase));
+
+        Console.WriteLine(texto.EndsWith("test"));
+        Console.WriteLine(texto.EndsWith("Teste.", StringComparison.OrdinalIgnoreCase));
     }
 
 
