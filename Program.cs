@@ -1,4 +1,6 @@
-﻿class Program
+﻿using System.Text;
+
+class Program
 {
     static void Main(string[] args)
     {
@@ -9,6 +11,7 @@
         Indice();
         ToLowerToUpper();
         Replace();
+        StringBuilder();
     }
 
     static void Interpolacao()
@@ -82,5 +85,20 @@
 
         var resultado = texto.Substring(3, 5);
         Console.WriteLine(resultado);
+    }
+
+    static void StringBuilder()
+    {
+        var texto = "Teste teste";
+        texto += " aqui";
+
+        Console.WriteLine(texto);
+
+        var teste = new StringBuilder();
+        teste.Append("Fazendo teste");
+        teste.Append("com o construtor");
+        teste.Append("de textos");
+
+        Console.WriteLine(teste);
     }
 }
