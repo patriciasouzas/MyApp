@@ -5,6 +5,7 @@
         Interpolacao();
         ComparacaoDeString();
         StartsWithEndsWith();
+        Equals();
     }
 
     static void Interpolacao()
@@ -37,5 +38,11 @@
         Console.WriteLine(texto.EndsWith("Teste.", StringComparison.OrdinalIgnoreCase));
     }
 
-
+    static void Equals()
+    {
+        var texto = "Mais uma forma de testar comparação";
+        Console.WriteLine(texto.Equals("mais uma forma de testar comparação"));
+        Console.WriteLine(texto.Equals("Mais uma forma"));
+        Console.WriteLine(texto.Equals("mais uma forma de testar comparação", StringComparison.OrdinalIgnoreCase));
+    }
 }
