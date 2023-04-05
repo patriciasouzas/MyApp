@@ -8,6 +8,7 @@
         Equals();
         Indice();
         ToLowerToUpper();
+        Replace();
     }
 
     static void Interpolacao()
@@ -66,5 +67,17 @@
         Console.WriteLine(texto.Insert(3, "AQUI"));
         Console.WriteLine(texto.Remove(3, 2));
         Console.WriteLine(texto.Length);
+    }
+
+    static void Replace()
+    {
+        var texto = "Só testando";
+
+        Console.WriteLine(texto.Replace("Só", "Apenas"));
+
+        var divisao = texto.Split("t");
+        Console.WriteLine(divisao[0]);
+        Console.WriteLine(divisao[1]);
+        Console.WriteLine(divisao[2]);
     }
 }
