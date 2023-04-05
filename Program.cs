@@ -6,6 +6,7 @@
         ComparacaoDeString();
         StartsWithEndsWith();
         Equals();
+        Indice();
     }
 
     static void Interpolacao()
@@ -44,5 +45,13 @@
         Console.WriteLine(texto.Equals("mais uma forma de testar comparação"));
         Console.WriteLine(texto.Equals("Mais uma forma"));
         Console.WriteLine(texto.Equals("mais uma forma de testar comparação", StringComparison.OrdinalIgnoreCase));
+    }
+
+    static void Indice()
+    {
+        var texto = "Treinando com Índice";
+
+        Console.WriteLine(texto.IndexOf("e"));
+        Console.WriteLine(texto.LastIndexOf("e"));
     }
 }
