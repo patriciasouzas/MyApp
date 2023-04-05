@@ -79,5 +79,8 @@
         Console.WriteLine(divisao[0]);
         Console.WriteLine(divisao[1]);
         Console.WriteLine(divisao[2]);
+
+        var resultado = texto.Substring(3, 5);
+        Console.WriteLine(resultado);
     }
 }
