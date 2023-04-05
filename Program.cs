@@ -7,6 +7,7 @@
         StartsWithEndsWith();
         Equals();
         Indice();
+        ToLowerToUpper();
     }
 
     static void Interpolacao()
@@ -53,5 +54,17 @@
 
         Console.WriteLine(texto.IndexOf("e"));
         Console.WriteLine(texto.LastIndexOf("e"));
+    }
+
+    static void ToLowerToUpper()
+    {
+        var texto = "Apenas um teste";
+
+        Console.WriteLine(texto.ToLower());
+        Console.WriteLine(texto.ToUpper());
+
+        Console.WriteLine(texto.Insert(3, "AQUI"));
+        Console.WriteLine(texto.Remove(3, 2));
+        Console.WriteLine(texto.Length);
     }
 }
